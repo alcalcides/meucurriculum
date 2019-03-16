@@ -1,0 +1,8 @@
+User-agent: *
+
+Disallow: /_css
+Disallow: /_english
+Disallow: /_javascript
+Disallow: /_modulos
+Disallow: /_images
+Allow: /_images/Alcides 3x4 formal web reduzido.jpg

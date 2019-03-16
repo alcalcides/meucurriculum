@@ -1,0 +1,31 @@
+passar email
+
+Há duas formas de passar email:
+1) usando a função disponível no arquivo funcaoPassarEmail.php 
+2) usando uma página que passa emails, que é arquivo passarEmail.php.
+
+Em ambos os casos é necessário:
+
+1)configurações do php.ini
+    descomentar "extension=php_openssl.dll"
+    se quiser, configurar mail.log
+    
+Orientações para quem escolher o método 2 de envio de emails:
+1) definir caminho para mensagem a ser enviada no arquivo "padroes.php". O padrão é mensagem.html
+2) definir mensagem que será enviada escrevendo ela no arquivo indicado em "padroes.php"
+3) com excessao do input "mensagem", lido no arquivo indicado em padroes.php, todos os outros campos são carregados via $_REQUEST
+4) O passo 2 é mais custoso do que o 1 no que tange tráfego e tempo.
+5) Apenas o método 2 copia dados de uma url externa
+6) O método 2, bem como o 1, guarda uma cópia da última mensagem enviada. O local e arquivo padrão é ultimaMensagemEnviada.html, editável em padroes.php
+7) Para indicar que se trata de uma url, siga os passos
+    a) Certifique-se de deixar o arquivo em branco
+    b) Obedeça a sintaxe abaixo, escrevendo tudo na primeira linha, em maiúsculo ou minúsculo: 
+    url: meuEndereço.com.br
+    c) Dê um enter e crie uma ou mais linhas em branco
+8) Nem toda url é carregada. Isso depende do nível de segurança do hospedeiro do site do qual se pretende copiar o código. caso não consiga, sugiro copiar o código manualmente e copiar no arquivo indicado em padroes.php.    
+
+Orientações para quem escolher o método 1 de envio de emails:
+1) O arquivo padroes.php é dispensável
+2) O método 1 é mais rápido e prático do que o 2
+3) O método 1, bem como o 2, guarda uma cópia da última mensagem enviada. O local e arquivo padrão é ultimaMensagemEnviada.html, editável em padroes.php
+com excessao do imput "mensagem", todos os outros são recebidos via $_REQUEST

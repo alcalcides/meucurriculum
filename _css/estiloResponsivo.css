@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+
+textarea {
+	vertical-align: middle;
+}
+
+span#caracteresDaMensagem {
+	display: block;
+	font-family: 'Calibri';
+	color: rgba(115,115,115,1);
+}
+
+/* Esta seleção são para todos os inputs que não são do tipo "submit" */
+input:not([type~=submit]), textarea {
+	width: 80%;
+	margin: auto 1%;
+}
+
+textarea {
+	height: 7.5rem;
+}	
+
+@media only screen and (max-device-width: 400px) {
+	textarea {
+		height: 15.5rem;
+	}
+	
+}

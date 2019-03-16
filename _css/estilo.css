@@ -1,0 +1,304 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Slabo+27px");
+
+/*------- Responsividade -------*/
+
+* {
+	box-sizing: border-box;
+}
+
+.row:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+[class*="col"] {
+	float: left;
+	padding: 14px;
+}
+
+/* For mobiles phones */
+[class*="col"] {
+	width: 100%;	
+}
+
+@media only screen and (min-width: 600px) {
+	/* For Tablets */
+	.colT0 {width: 0%;}
+	.colT1 {width: 8.33%;}
+	.colT2 {width: 16.66%;}
+	.colT3 {width: 25%;}
+	.colT4 {width: 33.33%;}
+	.colT5 {width: 41.66%;}
+	.colT6 {width: 50%;}
+	.colT7 {width: 58.33%;}
+	.colT8 {width: 66.66%;}
+	.colT9 {width: 75%;}
+	.colT10 {width: 83.33%;}
+	.colT11 {width: 91.66%;}
+	.colT12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+	/* For Desktops */
+	.col1 {width: 8.33%;}
+	.col2 {width: 16.66%;}
+	.col3 {width: 25%;}
+	.col4 {width: 33.33%;}
+	.col5 {width: 41.66%;}
+	.col6 {width: 50%;}
+	.col7 {width: 58.33%;}
+	.col8 {width: 66.66%;}
+	.col9 {width: 75%;}
+	.col10 {width: 83.33%;}
+	.col11 {width: 91.66%;}
+	.col12 {width: 100%;}
+}
+
+/*------- Características Gerais -------*/
+
+body{
+	background-color: #E2E3E0;
+}
+
+
+@media only screen and (min-width: 800px){
+	div#interfaceCompleta{
+		border: 3px solid white;
+		box-shadow: 0px 0px 5px white;
+		margin: -12px auto;
+		padding-left: 7%;
+		width: 80%;
+		background-image: url("../_images/colunaVertical.jpg");
+		background-repeat: repeat-y;
+		background-color: white;
+		font-family: 'Calibre', sans-serif;
+		color: black;
+	}
+}
+
+@media only screen and (min-width: 1060px){
+	div#interfaceCompleta {
+		background-image: url("../_images/colunaVertical1.jpg");
+	}	
+}
+
+h1{
+	font-size: 2.5rem;
+	margin-top:15px;
+	text-shadow: 2px 2px 2px #606060;
+	font-family:'Verdana',sans-serif;
+	font-weight: normal;
+}
+
+h2{
+	font-family:'Agency FB', sans-serif; 
+	font-weight: normal;
+	color: #808080;
+	margin-top: 0px;
+}
+
+
+h3{
+	font-family:'Agency FB', sans-serif; 
+	font-weight: normal;
+	color: #606060;
+	margin-bottom: 5%;
+	margin-top: 0%;
+}
+
+input[type=submit], button, a.linkDiscreto:link {
+	text-decoration: none;
+	color: rgba(72,74,121,1);
+}
+
+a.linkDiscreto:hover {
+	text-decoration: underline;
+}
+
+a.linkDiscreto:visited {
+	color: rgba(115,115,115,1);
+}
+
+li{
+	font-family: 'Calibre', sans-serif;
+	margin-bottom: 2px;
+}
+
+/*------- Dados Pessoais -------*/
+
+article#apresentacao{
+	font-family: 'Calibre', sans-serif;
+	font-size: 1.1rem;
+}
+
+article#apresentacao p{
+	margin:1px;	
+}
+
+img#queroVerFoto{
+	max-height:25px;
+	max-width:25px;
+	border: 1px solid #dddddd;
+	height: auto;
+	width: auto;
+	cursor: pointer;
+}
+
+img#rosto 	{
+	display: none;
+}
+
+/*-------- Tópicos --------*/
+
+.borda {
+	background-image: url("../_images/linhaHorizontal1.jpg");
+	background-repeat: no-repeat;
+	background-size: 80% 1px;
+	background-position: auto;
+	padding-top: 1.5%;
+}
+
+.bordaDireita {
+	background-position: right top;
+	padding-top: 1.5%;
+}
+
+/*-------- Formação acadêmic --------*/
+
+section.corpo{
+	margin-top: 1%;
+}
+
+span.nomeDoCurso {
+	font-weight: bold;
+}
+
+/* ========== Experiência ========== */
+
+
+table#linhaDoTempo {
+	border-spacing: 0px;
+	margin: 15px 10px 20px 10px;
+	border: 3px solid rgb(208, 223, 242);
+	border-radius: 3px;
+}
+
+@media only screen and (max-width: 450px){
+	table#linhaDoTempo {
+		margin: 15px 0px 20px 0px;
+	}	
+}
+td {
+	font-family: Arial;
+	font-size: 0.8rem;
+	padding: 1% 1%;
+	box-sizing: ;
+	text-align: center;
+	vertical-align: middle;
+	background-color: #ffffff;
+	transition: 0.8s;
+}
+
+
+@media only screen and (max-width: 450px){
+	td {
+		font-size: 0.7rem;
+	}
+}
+
+td:hover{
+	background-color: #dddddd;
+}
+
+td.tempo, td.lugar, td.profissaoantiga{
+	border-bottom: 1px solid rgb(111, 113, 185);
+	border-right: 1px solid rgb(111, 113, 185);
+}
+
+td.tempo1, td.lugar1, td.profissaoantiga1{
+	border-right:1px solid rgb(111, 113, 185);
+}
+
+td.atividades{
+	border-bottom: 1px solid rgb(111, 113, 185);
+}
+
+/*========== Qualificações ==========*/
+
+ul.marcadoresDiferenciais {
+	list-style-type: none;
+	font-size: 0.9rem;
+}
+
+li.marcadorDiferencial {
+	background-image: url('../_images/marcadorDeItemDeLista3.png');
+	background-position: 10px 8px;
+	padding-left: 40px; 
+	background-repeat: no-repeat;
+}
+
+ul#linguagensDeProgramacao {
+	list-style-type: none;
+}
+
+ul#linguagensDeProgramacao li {
+	font-family: 'Slabo 27px', serif;
+}
+
+/*==========Rodapé==========*/
+
+footer{
+	margin-top: 10%;
+	margin-right: 1%;
+}
+
+@media only screen and (max-width: 400px){
+	footer {
+		padding-top: 2%;
+	}
+}
+
+footer nav {
+	margin-top: 2%;
+	margin-bottom: 8%;
+	padding-top: 3%;	
+	display: block;
+}
+
+footer nav a {
+	/*Os parametros color e text-decoration estão mais acima*/
+	background-color: #ECECEC;
+	padding: 2% 5%;
+	text-align: center;
+	font-size: 1.3rem;
+	border: 1px solid #747474;
+}
+
+@media only screen and (min-width: 400px){
+	footer nav a {
+		font-size: 0.85rem;		
+		padding: 1% 2%;
+	}
+}
+
+footer p {
+	margin-top: 1%;
+	margin-bottom: 1%;
+	text-align: right;
+	font-size: 1em;
+}
+
+footer a#contatoDesigner:link {
+	color: rgba(72,74,121,1);
+	text-decoration: none;
+}
+
+footer a#contatoDesigner:hover {
+	text-decoration: underline;
+}
+
+footer a#contatoDesigner:visited {
+	color: rgba(115,115,115,1);
+}
